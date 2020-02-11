@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
 
     var counter:Int = 0
     var num:Int = 0
+    var upCounter:Int = 0
+    var downCounter:Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,11 +29,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         up.setOnClickListener {
-            // TODO
+            up.setText("UP ("+(upCounter++)+")")
         }
 
         down.setOnClickListener {
-            // TODO
+            down.setText("DOWN ("+(downCounter++)+")")
         }
     }
 }
