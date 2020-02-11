@@ -29,11 +29,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         up.setOnClickListener {
-            up.setText("UP ("+(upCounter++)+")")
+            up.setText("UP ("+(++upCounter)+")")
         }
 
         down.setOnClickListener {
-            down.setText("DOWN ("+(downCounter++)+")")
+            down.setText("DOWN ("+(++downCounter)+")")
         }
     }
 }
